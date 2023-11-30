@@ -28,7 +28,7 @@ const Header = () => {
       <img src={ require('./assets/logoNimbus.png') } style={{ width: '200px', height: '100px', objectFit: 'contain' }} />
       <Botao to="/">Ir para Home</Botao>
       <Botao to="/app">Ir para App</Botao>
-      <Botao to="/Historico">Histórico de Dados</Botao>
+     
     </HeaderContainer>
   );
 };

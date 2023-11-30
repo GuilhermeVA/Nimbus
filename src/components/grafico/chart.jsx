@@ -117,7 +117,7 @@ const ChartComponent = () => {
   }, [chartData, chartOptions]);
 
   return (
-    <div style={{ height: "100vh", padding: "5vw" }}>
+    <div style={{ height: "100vh", padding: "0vw" }}>
       <h1>Condições Meteorológicas</h1>
       <canvas id="myChart"></canvas>
       <div style={{ marginTop: "20px" }}>

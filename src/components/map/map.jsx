@@ -7,6 +7,26 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { saveAs } from "file-saver";
 
+
+const locations = [
+  {
+    position: [-23.005799390382244, -43.313602068535985],
+    info: "Ibmec Barra",
+  },
+  {
+    position: [-25.423164974, -49.270998916],
+    info: "Curitiba",
+  },
+  {
+    position: [-22.9423212307, -43.3579469015],
+    info: "Cidade de Deus",
+  },
+  {
+    position: [-22.950996196, -43.206499174],
+    info: "Cristo Redentor",
+  },
+];
+
 const customMarker = new Icon({
   iconUrl: "https://cdn-icons-png.flaticon.com/128/2776/2776067.png",
   iconSize: [30, 30],
@@ -72,33 +92,35 @@ const MapComponent = () => {
   };
 
   return (
-    <div style={{ padding: "5vw", margin: "15hv" }}>
+    <div style={{ padding: "0vw", margin: "0hv",  }}>
       <h1>Mapa</h1>
       <div>
         <MapContainer
           ref={mapRef}
           center={[-22.9921, -43.3249]}
           zoom={13}
-          style={{ height: "90vh", width: "100%" }}
+          style={{ height: "60vh", width: "90%" }}
           onClick={handleMapClick}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <MarkerClusterGroup
+<MarkerClusterGroup
             chunckedLoading
             iconCreateFunction={createClusterIcon}
           >
-            {markers.map((marker, index) => (
-              <Marker
-                key={index}
-                position={marker.position}
-                icon={customMarker}
-              >
-                <Popup>{marker.info}</Popup>
-              </Marker>
-            ))}
+            {locations.map((location, index) => {
+              return (
+                <Marker
+                  key={index}
+                  position={location.position}
+                  icon={customMarker}
+                >
+                  <Popup>{location.info}</Popup>
+                </Marker>
+              );
+            })}
           </MarkerClusterGroup>
         </MapContainer>
       </div>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './filter.css';
+import { Link } from 'react-router-dom';
+
 
 const FilterForm = () => {
   const [filter, setFilter] = useState({
@@ -114,8 +116,10 @@ const FilterForm = () => {
           </select>
         </div>
       </div>
-
-      <button type="submit">Filtrar</button>
+      
+      <Link to="/Historico">
+  <button type="submit">Filtrar</button>
+</Link>
     </form>
   );
 };

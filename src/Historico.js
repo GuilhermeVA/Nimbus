@@ -16,13 +16,15 @@ import FilterComponent from './components/Filter/filter';
 function Historico() {
     return (
       <div>
-        <Header/>
-        <FilterComponent/>
+      <Header/>
+      <div id="historico">
+        
         <MapComponent />
         <ChartComponent />
-        <TableComponent />
+        
       </div>
-      
+      <TableComponent />
+      </div>
     );
   }
 
