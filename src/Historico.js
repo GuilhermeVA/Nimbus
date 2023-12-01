@@ -9,7 +9,7 @@ import Header from './components/header';
 import MapComponent from './components/map/map'; 
 import ChartComponent from './components/grafico/chart';
 import TableComponent from './components/table/table'; 
-import FilterComponent from './components/Filter/filter';
+
 
 
 

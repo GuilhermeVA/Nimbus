@@ -5,14 +5,14 @@ import MapComponent from './components/map/map';
 import ChartComponent from './components/grafico/chart';
 import TableComponent from './components/table/table'; 
 import styled from 'styled-components';
-import FilterComponent from './components/Filter/filter';
+import FilterForm from './components/Filter2/filter2';
 
 
 const App = () => {
 return(
   <div>
   <Header/>
-  <FilterComponent/>
+  <FilterForm/>
   </div>
 );
   
