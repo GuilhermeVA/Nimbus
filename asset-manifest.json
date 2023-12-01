@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Nimbus/static/css/main.6e2d7506.css",
-    "main.js": "/Nimbus/static/js/main.a71b481b.js",
+    "main.css": "/Nimbus/static/css/main.6b820009.css",
+    "main.js": "/Nimbus/static/js/main.8048bdfd.js",
     "static/js/703.05617f9c.chunk.js": "/Nimbus/static/js/703.05617f9c.chunk.js",
     "static/js/198.d32d60ab.chunk.js": "/Nimbus/static/js/198.d32d60ab.chunk.js",
     "static/js/787.0f8d78ff.chunk.js": "/Nimbus/static/js/787.0f8d78ff.chunk.js",
     "static/media/logoNimbus.png": "/Nimbus/static/media/logoNimbus.455a619258082607552e.png",
     "index.html": "/Nimbus/index.html",
-    "main.6e2d7506.css.map": "/Nimbus/static/css/main.6e2d7506.css.map",
-    "main.a71b481b.js.map": "/Nimbus/static/js/main.a71b481b.js.map",
+    "main.6b820009.css.map": "/Nimbus/static/css/main.6b820009.css.map",
+    "main.8048bdfd.js.map": "/Nimbus/static/js/main.8048bdfd.js.map",
     "703.05617f9c.chunk.js.map": "/Nimbus/static/js/703.05617f9c.chunk.js.map",
     "198.d32d60ab.chunk.js.map": "/Nimbus/static/js/198.d32d60ab.chunk.js.map",
     "787.0f8d78ff.chunk.js.map": "/Nimbus/static/js/787.0f8d78ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e2d7506.css",
-    "static/js/main.a71b481b.js"
+    "static/css/main.6b820009.css",
+    "static/js/main.8048bdfd.js"
   ]
 }
