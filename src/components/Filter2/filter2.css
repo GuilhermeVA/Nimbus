@@ -1,38 +1,61 @@
-/* Adicione este estilo em um arquivo CSS separado ou dentro do seu componente React */
+
 
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+button {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.label-inline {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.variable-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.variable {
+  cursor: pointer;
+  padding: 8px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: inline-block; 
+}
+
+.variable:hover {
+  background-color: #f0f0f0;
+}
+
+.variable.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
+ 
   
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  label.checkbox {
-    display: flex;
-    align-items: center;
-  }
-  
-  input[type="checkbox"] {
-    margin-right: 8px;
-  }
-  
-  button {
+
+    button {
     background-color: #4caf50;
     color: #fff;
     padding: 10px 15px;
@@ -44,30 +67,3 @@ form {
   button:hover {
     background-color: #45a049;
   }
-
-  /* Adicione este estilo em um arquivo CSS separado */
-
-.variable-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .variable {
-    cursor: pointer;
-    padding: 8px;
-    margin: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .variable:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .variable.selected {
-    background-color: #4caf50;
-    color: #fff;
-  }
-  
-  
